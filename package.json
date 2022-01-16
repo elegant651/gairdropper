@@ -1,0 +1,30 @@
+{
+  "name": "GAirdropper",
+  "version": "0.1.1",
+  "description": "Minting airdrop tool with HashLips Art Engine, which is for generative art layers.",
+  "main": "index.js",
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "layers/**/*",
+      "node_modules/**/*",
+      "src/**/*"
+    ]
+  },
+  "scripts": {
+    "build": "node index.js",
+    "generate": "node index.js",
+    "update_info": "node utils/update_info.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.18.2",
+    "canvas": "^2.8.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.2",
+    "gif-encoder-2": "^1.0.5",
+    "sha1": "^1.1.1",
+    "form-data": "^4.0.0"
+  }
+}
